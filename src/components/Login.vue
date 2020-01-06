@@ -13,7 +13,8 @@
         </el-form-item>
         <!-- password -->
         <el-form-item prop="password">
-          <el-input v-model="loginForm.password" prefix-icon="iconfont icon-3702mima" type="password"></el-input>
+          <el-input v-model="loginForm.password" prefix-icon="iconfont icon-3702mima"
+          type="password" @keyup.enter.native="login"></el-input>
         </el-form-item>
         <!-- button -->
         <el-form-item class="btns">
